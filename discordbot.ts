@@ -865,7 +865,7 @@ const commandsData = [
 
 client.once("ready", async () => {
   console.log(`✓ Bot logged in as ${client.user?.tag}`);
-  const rest = new REST({ version: "10" }).setToken(TOKEN!);
+  const rest = new REST({ version: "10" }).set(!);
   await rest.put(Routes.applicationCommands(client.user!.id), { body: commandsData }).catch(console.error);
   
   await deployOrUpdateAllPanels(client);
