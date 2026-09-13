@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "Discord bot for multi-server administration and bridge management",
   "main": "discordbot.ts",
-  "type": "module",
   "scripts": {
     "start": "tsx discordbot.ts",
     "dev": "tsx watch discordbot.ts"
